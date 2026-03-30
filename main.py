@@ -59,7 +59,7 @@ with tab1:
     
     # Plotly 무지개 선 그래프 그리기
     fig = px.line(df, x='날짜', y=['최고 기온 (°C)', '최저 기온 (°C)', '평균 기온 (°C)'],
-                  color_discrete_sequence=px.colors.qualitative.Rainbow) # 무지개색 설정
+                 color_discrete_sequence=['#FF69B4', '#87CEFA', '#98FB98']) # 무지개색 설정
     
     fig.update_layout(
         plot_bgcolor='white', paper_bgcolor='white', # 차트 배경도 하얗게
